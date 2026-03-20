@@ -20,3 +20,4 @@ hotel = {
 } 
 
 print([hotel][0]['rooms'][2])
+print("Hello everyone")
