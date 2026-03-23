@@ -1,39 +1,32 @@
 import csv
 
-game_list = [
-    {
-        'name': 'Grand Theft Auto IV',
-        'gender': 'Action',
-        'developer':'Rockstar',
-        'ESRB Clasification': 'M',
+def input_videogames():
+    while True:
+        try:
+            n = int(input("¿How many games do you wanto to register? "))
+            if n > 0:
+                break
+            else:
+                print("Please enter a number higher than 0.")
+        except ValueError:
+            print("Invalid number,Enter a whole number.")
 
+    path_file = 'videogames2.csv'
 
-},{
-        'name': 'The Elder Scrolls IV: Oblivion',
-        'gender': 'RPG',
-        'developer':'Bethesda',
-        'ESRB Clasification': 'M',
+    with open(path_file, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file,delimiter='\t')
+        writer.writerow(['name', 'gender', 'developer', 'ESRB clasification'])
 
-},{
-        'name': 'Tony Hawks Pro Skater 2',
-        'gender': 'Sports',
-        'developer':'Activision',
-        'ESRB Clasification': 'T',
-}
-]
+        for i in range(n):
+            print(f"\n Videogame {i+1} ")
+            name = input("name: ")
+            gender = input("gender: ")
+            developer = input("developer: ")
+            esrb = input("ESRB clasification: ")
+            
+            writer.writerow([name, gender, developer, esrb])
 
-header_list=(
-    'name',
-    'gender',
-    'developer',
-    'ESRB Clasification'
-)
+    print(f"\n We have seaved {n} videogames in '{path_file}'.")
 
-def enter_info_csv (path_file,data,headers):
-    with open (path_file,'w', encoding='utf-8') as file:
-     writer = csv.DictWriter(file,headers, delimiter='\t')
-     writer.writeheader() 
-     writer.writerows(data)
-
-
-enter_info_csv ('games2.csv',game_list,header_list)
+if __name__ == "__main__":
+    input_videogames()
