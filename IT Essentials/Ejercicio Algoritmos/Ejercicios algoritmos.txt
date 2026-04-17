@@ -1,0 +1,54 @@
+1.Cree un algoritmo para ver un video en Youtube. Sea lo mÃ¡s especifico posible.
+
+1.Inicio
+2. Si tiene computadora
+ 1. Encender computadora
+ 2. Ingresar password para desbloquear la computadora
+ 3. Ingresar a su navegador preferido(google, firefox) e ingresar a Youtube.com 
+ 
+
+3. Sino, si tiene celular, o si tiene tablet, o si tiene tele inteligente
+ 1. Desbloquear dispositivo
+ 2. Ingresar a la app de Youtube
+
+4.Sino
+ 1. Busque a alguien que si tenga una de las anteriores
+
+5. Buscar el video 
+6. Reproducir video
+
+7. Fin
+
+Cree un algoritmo que describa su rutina diaria. Use condiciones, condiciones multiples y ciclos.
+
+1. Inicio
+
+2. Despertarme
+
+3. Levantarme
+
+4. Lavarme los dientes
+
+5. Mientras los dientes esten sucios
+ 1. Seguir lavandome los dientes con el cepillo.
+
+6. BaÃ±arme
+
+7. Mudarme
+
+8. Si tengo que trabajar
+ 1. Encender la computadora para trabajar
+
+9. si quiero salir de casa a pasear
+
+10. Si tengo carro y el carro tiene gasolina
+ 1. Ir en carro
+
+11. Sino, si tengo bici
+  1. Ir en Bicicleta
+
+12. Sino
+ 1. Ir en autobus
+
+
+13. Fin
